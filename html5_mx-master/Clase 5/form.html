@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Forms</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="base.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<fieldset>
+		<legend>FORMULARIO DE REGISTRO</legend>
+	<form>
+		<br>
+
+		<label>Nombres :</label><br>
+			<input type="text" class="for" name="userName" placeholder="Ingrese su nombre ..." required><br><br>
+
+		<label>Apellidos:</label><br>
+			<input type="text" class="for" name="lastName" placeholder="Ingrese sus apellidos ..." required><br><br>
+
+		<label>Contraseña:</label><br>
+			<input type="password" class="for" name="pass" placeholder="Ingrese su contraseña ..." required> <br><br>
+
+		<label>Genero :</label><br>
+			<input type="radio" name="genero" value="masculino"> Varon
+    		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="genero" value="femenino"> Mujer <br><br>
+
+		<label>Correo: </label><br>
+			<input type="mail" name="correo" placeholder="Ingrese Correo ..." required class="for"><br><br>
+
+		<label>Fecha de Nacimiento:</label>
+			<input type="date" name="nacimiento"><br><br>
+
+		<label>Gustos Musicales</label><br>
+			<select name="music" >
+     			<option value="rock">Rock</option>
+      			<option value="salsa">Salsa</option>
+      			<option value="pop">Pop</option>
+    		</select><br><br>
+
+
+		<label>Comida Favorita</label><br>
+			<input type="checkbox" name="comida" value="arroz" class="chk"> Arroz
+    		<input type="checkbox" name="comida" value="fideos"> Pasta
+    		<input type="checkbox" name="comida" value="mariscos">Ceviche
+    		<br><br>
+
+		<label>Deporte favorito</label><br>
+			<select name="deporte" multiple size="4" >
+     			<option value="fultbol">fultbol</option>
+      			<option value="voley">voley</option>
+      			<option value="natacion">natacion</option>
+      			<option value="ciclismo">ciclismo</option>
+      			<option value="tenis">tenis</option>
+    		</select><br><br>
+
+			
+    	<input type="hidden" name="id" value="1238">
+	    <button>Registrar</button> 
+
+	</form>
+</fieldset>
+</body>
+</html>	
